@@ -115,7 +115,7 @@
     {
       "id": "next-steps",
       "title": "Next Steps",
-      "description": "This is a research paper release repository. To get started: 1) Read README.md for the architecture pseudocode and key concepts, 2) Study the paper for mathematical details, 3) Review the figures to build intuition about how AttnRes improves training dynamics. Implementation code for the block_attn_res function and forward pass may be added in future updates.",
+      "description": "This is a research paper release repository. To get started: 1) Read README.md for the architecture pseudocode and key concepts, 2) Study the paper for mathematical details, 3) Review the figures to build intuition about how AttnRes improves training dynamics. Implementation code for the Block Attention Residuals function and forward pass may be added in future updates.",
       "focusDirectory": "",
       "colorMode": "fileTypes"
     }
