@@ -56,7 +56,7 @@
     {
       "id": "research-paper",
       "title": "The Research Paper",
-      "description": "The full academic publication with detailed mathematical formulations, experimental setup, scaling law analysis, and ablation studies. Key findings: Block AttnRes with ~8 blocks recovers most Full AttnRes benefits at marginal computational cost, matching a baseline trained with 1.25x more compute.",
+      "description": "The full academic publication with detailed mathematical formulations, experimental setup, scaling law analysis, and ablation studies. Key findings: Block AttnRes with approximately 8 blocks recovers most Full AttnRes benefits at marginal computational cost, matching a baseline trained with 1.25 times more compute.",
       "focusDirectory": "",
       "colorMode": "fileTypes",
       "highlightLayers": [
@@ -115,7 +115,7 @@
     {
       "id": "next-steps",
       "title": "Next Steps",
-      "description": "This is a research paper release repository. To get started: (1) Read README.md for the architecture pseudocode and key concepts, (2) Study the paper for mathematical details, (3) Review the figures to build intuition about how AttnRes improves training dynamics. Implementation code for the block_attn_res() function and forward pass may be added in future updates.",
+      "description": "This is a research paper release repository. To get started: 1) Read README.md for the architecture pseudocode and key concepts, 2) Study the paper for mathematical details, 3) Review the figures to build intuition about how AttnRes improves training dynamics. Implementation code for the block_attn_res() function and forward pass may be added in future updates.",
       "focusDirectory": "",
       "colorMode": "fileTypes"
     }
