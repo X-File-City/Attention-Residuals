@@ -1,0 +1,123 @@
+{
+  "id": "attention-residuals-onboarding",
+  "title": "Attention Residuals: Research Overview",
+  "description": "A guided tour of the AttnRes research repository — understand the novel approach to residual connections in Transformers, the architecture, and key experimental results.",
+  "version": "1.0.0",
+  "steps": [
+    {
+      "id": "welcome-overview",
+      "title": "Welcome to Attention Residuals",
+      "description": "This repository implements Attention Residuals (AttnRes), a drop-in replacement for standard residual connections in Transformers. Instead of fixed-weight residual accumulation, AttnRes lets each layer selectively aggregate earlier representations through learned, input-dependent attention over depth. This solves the PreNorm dilution problem where hidden-state magnitudes grow unboundedly as depth increases.",
+      "focusDirectory": "",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "documentation",
+          "name": "Documentation",
+          "color": "#3b82f6",
+          "items": [
+            { "path": "README.md", "type": "file" },
+            { "path": "Attention_Residuals.pdf", "type": "file" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        },
+        {
+          "id": "visual-assets",
+          "name": "Visual Assets",
+          "color": "#10b981",
+          "items": [
+            { "path": "assets", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "readme-entry-point",
+      "title": "README — The Primary Entry Point",
+      "description": "The README contains the complete project overview including the motivation behind AttnRes, PyTorch-style pseudocode for both Full and Block AttnRes implementations, and benchmark results. Start here to understand the core contribution: replacing fixed residual accumulation with softmax attention over preceding layer outputs.",
+      "focusDirectory": "",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "readme",
+          "name": "README",
+          "color": "#f59e0b",
+          "items": [
+            { "path": "README.md", "type": "file" }
+          ],
+          "opacity": 0.8,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "research-paper",
+      "title": "The Research Paper",
+      "description": "The full academic publication with detailed mathematical formulations, experimental setup, scaling law analysis, and ablation studies. Key findings: Block AttnRes with ~8 blocks recovers most Full AttnRes benefits at marginal computational cost, matching a baseline trained with 1.25x more compute.",
+      "focusDirectory": "",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "paper",
+          "name": "Research Paper",
+          "color": "#8b5cf6",
+          "items": [
+            { "path": "Attention_Residuals.pdf", "type": "file" }
+          ],
+          "opacity": 0.8,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "architecture-visuals",
+      "title": "Architecture & Results Visualizations",
+      "description": "The assets directory contains key figures from the paper. 'overview.png' shows the architecture comparison between standard residuals, Full AttnRes, and Block AttnRes. 'scaling_law.png' presents comparative scaling curves. 'training_dynamics.png' demonstrates bounded output magnitudes and uniform gradient norms — evidence that AttnRes mitigates PreNorm dilution.",
+      "focusDirectory": "assets",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "architecture-diagram",
+          "name": "Architecture Diagram",
+          "color": "#ef4444",
+          "items": [
+            { "path": "assets/overview.png", "type": "file" }
+          ],
+          "opacity": 0.8,
+          "renderStrategy": "border"
+        },
+        {
+          "id": "experimental-results",
+          "name": "Experimental Results",
+          "color": "#06b6d4",
+          "items": [
+            { "path": "assets/scaling_law.png", "type": "file" },
+            { "path": "assets/training_dynamics.png", "type": "file" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        },
+        {
+          "id": "branding",
+          "name": "Project Branding",
+          "color": "#a855f7",
+          "items": [
+            { "path": "assets/logo.png", "type": "file" }
+          ],
+          "opacity": 0.5,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "next-steps",
+      "title": "Next Steps",
+      "description": "This is a research paper release repository. To get started: (1) Read README.md for the architecture pseudocode and key concepts, (2) Study the paper for mathematical details, (3) Review the figures to build intuition about how AttnRes improves training dynamics. Implementation code for the block_attn_res() function and forward pass may be added in future updates.",
+      "focusDirectory": "",
+      "colorMode": "fileTypes"
+    }
+  ]
+}
